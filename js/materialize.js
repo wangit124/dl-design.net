@@ -5446,7 +5446,7 @@ $jscomp.polyfill = function (e, r, p, m) {
     onOpenEnd: null,
     onCloseStart: null,
     onCloseEnd: null,
-    preventScrolling: true
+    preventScrolling: false
   };
 
   /**
@@ -10437,13 +10437,13 @@ $jscomp.polyfill = function (e, r, p, m) {
 
   var _defaults = {
     duration: 200, // ms
-    dist: -100, // zoom scale TODO: make this more intuitive as an option
+    dist: 100, // zoom scale TODO: make this more intuitive as an option
     shift: 0, // spacing for center image
     padding: 0, // Padding between non center items
-    numVisible: 5, // Number of visible items in carousel
+    numVisible: 1, // Number of visible items in carousel
     fullWidth: false, // Change to full width styles
-    indicators: false, // Toggle indicators
-    noWrap: false, // Don't wrap around and cycle through items.
+    indicators: true, // Toggle indicators
+    noWrap: true, // Don't wrap around and cycle through items.
     onCycleTo: null // Callback for when a new slide is cycled to.
   };
 
@@ -10650,7 +10650,7 @@ $jscomp.polyfill = function (e, r, p, m) {
         this.frame = this.offset;
         this.timestamp = Date.now();
         clearInterval(this.ticker);
-        this.ticker = setInterval(this._trackBound, 100);
+        this.ticker = setInterval(this._trackBound, 2);
       }
 
       /**
