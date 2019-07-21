@@ -2,4 +2,4 @@
 
 Doris' interior design/floor plan portfolio, includes work experience, projects, resume, about me. :)
 
-![alt-text](https://github.com/hwanggit/hwanggit.github.io/blob/master/projects/dldesign.png)
+![alt-text](https://github.com/hwanggit/hwanggit.github.io/blob/master/images/projects/portfolio/dldesign.png)
